@@ -4,8 +4,17 @@
 #ifdef USE_MYMATH
     #include <MathFunctions.h>
 #endif
+void print_platform(){
+    
+#ifdef _WIN32
+	std::cout << "platform: windows" << std::endl;
+#elif __linux__
+	std::cout << "platform: linux" << std::endl;
+#endif
 
+}
 int main(int argc, char* argv[]){
+    print_platform();
     std::cout << HELLO_CMAKE << std::endl;
     std::cout << "PATH_PROJECT: "<< PATH_PROJECT << std::endl;
     double x;
