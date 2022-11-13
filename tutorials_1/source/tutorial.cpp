@@ -1,11 +1,13 @@
 #include <iostream>
-#include <TutorialConfig.h>
+#include <include/TutorialConfig.h>
 #include <string>
 #ifdef USE_MYMATH
-    #include "MathFunctions.h"
+    #include <MathFunctions.h>
 #endif
 
 int main(int argc, char* argv[]){
+    std::cout << HELLO_CMAKE << std::endl;
+    std::cout << "PATH_PROJECT: "<< PATH_PROJECT << std::endl;
     double x;
     double outputValue = 0;
     if (argc<2){

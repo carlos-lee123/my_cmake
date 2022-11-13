@@ -1,1 +1,2 @@
-rd /s /q .\build .\include
+rd /s /q .\build 
+del .\source\include\TutorialConfig.h

@@ -2,5 +2,6 @@
 #define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
 #define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
 
+#define PATH_PROJECT "${PROJECT_SOURCE_DIR}"
 
 #cmakedefine USE_MYMATH
